@@ -1,0 +1,14 @@
+
+FROM debian:latest
+
+RUN apt-get update && \
+    apt-get install -y netcat-openbsd fortune-mod cowsay
+
+COPY wisecow.sh /usr/local/bin/
+
+RUN chmod +x /usr/local/bin/wisecow.sh
+
+EXPOSE 4499
+
+CMD ["wisecow.sh"]
+
