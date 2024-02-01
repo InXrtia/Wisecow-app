@@ -18,6 +18,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t shrey871/wisecow-shrey:latest .
+          docker build -t wisecow-shrey:latest .
           docker tag wisecow-shrey:latest shrey871/wisecow-shrey:latest
           docker push shrey871/wisecow-shrey:latest
