@@ -17,4 +17,12 @@ spec:
         image: shrey871/wisecow-shrey:latest
         ports:
         - containerPort: 4499
-
+        volumeMounts:
+          - name: tls-certs
+            mountPath: /etc/tls
+            readOnly: true
+      volumes:
+        - name: tls-certs
+          secret:
+            secretName: TLS-secret
+        
