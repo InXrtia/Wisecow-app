@@ -1,1 +1,1 @@
-wisecow-app Token :- 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
+wisecow-app Token :- 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
