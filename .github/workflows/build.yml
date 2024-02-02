@@ -32,4 +32,4 @@ jobs:
           namespace: your-namespace
           deployment: wisecow-deployment
           manifests: |
-            wisecow-app/kubernetes-wisecow
+            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
