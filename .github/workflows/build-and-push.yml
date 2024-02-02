@@ -18,7 +18,7 @@ jobs:
   
       - name: Build and push Docker image
         run: |
-          docker build -t wisecow-shrey:latest .
-          docker tag wisecow-shrey:latest ${{ secrets.shrey871 }}/shrey871/wisecow-shrey:latest
-          docker push ${{ secrets.shrey871 }}/shrey871/wisecow-shrey:latest
+          docker buildx create --use
+          docker buildx inspect --bootstrap
+          docker buildx build --platform linux/amd64,linux/arm64 -t shrey871/wisecow-shrey:latest -f path/to/Dockerfile . --push
 
