@@ -21,6 +21,6 @@ jobs:
           docker buildx create --use
           docker buildx inspect --bootstrap
           pwd
-          ls /home/runner/work/Wisecow-app/Wisecow-app/
+          ls /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/
           ls /home/runner/work/Wisecow-app/Wisecow-app/
           DOCKER_BUILTKIT=0 docker buildx build --platform linux/amd64,linux/arm64 -t shrey871/wisecow-app:latest -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/dockerfile . --push
