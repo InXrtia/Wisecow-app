@@ -4,8 +4,8 @@ FROM debian:latest
 RUN apt-get update && \
     apt-get install -y netcat-openbsd fortune-mod cowsay
 RUN echo $(ls)
-RUN echo $(pwd)
-COPY Wisecow-app/wisecow-app/wisecow.sh /usr/local/bin/
+RUN echo pwd
+COPY /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/wisecow.sh /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/wisecow.sh
 
