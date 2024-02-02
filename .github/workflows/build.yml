@@ -28,6 +28,6 @@ jobs:
         uses: azure/k8s-deploy@v1
         with:
           creds: ${{ secrets.KUBE_CONFIG }}
-          image: registry.example.com/myapp:latest
+          image: shrey871/wisecow-app:latest
           namespace: your-namespace
-          deployment: your-deployment
+          deployment: wisecow-deployment
