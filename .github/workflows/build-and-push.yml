@@ -20,5 +20,5 @@ jobs:
         run: |
           docker buildx create --use
           docker buildx inspect --bootstrap
-          docker buildx build --platform linux/amd64,linux/arm64 -t shrey871/wisecow-shrey:latest . --push
+          docker buildx build --platform linux/amd64,linux/arm64 -t shrey871/wisecow-shrey:latest -f docker/Dockerfile . --push
 
