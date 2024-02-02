@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: wisecow-container
-        image: shrey871/wisecow-shrey:latest
+        image: shrey871/wisecow-app:latest
         ports:
         - containerPort: 4499
         volumeMounts:
