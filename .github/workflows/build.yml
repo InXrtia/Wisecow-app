@@ -21,4 +21,5 @@ jobs:
           docker buildx create --use
           docker buildx inspect --bootstrap
           pwd
+          ls
           docker buildx build --platform linux/amd64,linux/arm64 -t shrey871/wisecow-app:latest -f shrey871/wisecow-app . --push
