@@ -31,3 +31,5 @@ jobs:
           image: shrey871/wisecow-app:latest
           namespace: your-namespace
           deployment: wisecow-deployment
+          manifests: |
+            wisecow-app/kubernetes-wisecow
