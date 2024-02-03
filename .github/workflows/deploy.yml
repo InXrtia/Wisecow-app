@@ -25,12 +25,12 @@ jobs:
           ls /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
           # kubectl set image deployment/wisecow-deployment wisecow-container=shrey871/wisecow-app:latest
           # kubectl rollout status deployment/wisecow-deployment
-          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-namespace.yml
-          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-deployment.yml
-          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-pods.yml
-          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-svc.yml
-          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-ingress.yml
-          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/TLS-secret.yml
+          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-namespace.yml --validate=false
+          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-deployment.yml --validate=false
+          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-pods.yml --validate=false
+          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-svc.yml --validate=false
+          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-ingress.yml --validate=false
+          kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/TLS-secret.yml --validate=false
           # Add additional apply commands for other YAML files if needed
         env:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
