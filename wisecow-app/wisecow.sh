@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function generate_wisecow() {
-    echo "Hello Shrey" | /usr/games/cowsay
+    echo "Hello, This Cowsay script is created by Shrey. The desire output is: Living your life is a task so difficult, it has never been attempted before." | /usr/games/cowsay
 }
 
 function serve_wisecow() {
