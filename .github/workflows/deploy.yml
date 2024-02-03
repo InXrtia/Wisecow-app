@@ -22,7 +22,7 @@ jobs:
         run: |
           pwd 
           ls /home/runner/work/Wisecow-app/Wisecow-app
-          ls /home/runner/work/Wisecow-app/Wisecow-app/kubernetes-wisecow
+          ls /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
           kubectl apply -f /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-deployment.yml
         env:
           KUBECONFIG: ${{ secrets.KUBE_CONFIG }}
