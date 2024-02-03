@@ -32,5 +32,5 @@ jobs:
           namespace: your-namespace
           deployment: wisecow-deployment
           manifests: |
-            kubernetes-wisecow/wisecow-deployment.yml
+            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-deployment.yml
   
