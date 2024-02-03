@@ -32,4 +32,8 @@ jobs:
           namespace: your-namespace
           deployment: wisecow-deployment
           manifests: |
-            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
+            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-deoployment.yml
+            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-namespace.yml
+            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-svc.yml
+            /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/TLS-secret.yml
+          
