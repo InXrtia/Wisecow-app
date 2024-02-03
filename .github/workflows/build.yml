@@ -33,4 +33,4 @@ jobs:
           deployment: wisecow-deployment
           manifests: |
             /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow/wisecow-deployment.yml
-  
+          args: --validate=false
