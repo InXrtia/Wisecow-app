@@ -23,7 +23,7 @@ jobs:
           pwd 
           
           ls /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
-          kubectl set image deployment/wisecow-deployment wisecow-container=shrey871/wisecow-app:latest
-          kubectl rollout status deployment/wisecow-deployment
+          # kubectl set image deployment/wisecow-deployment wisecow-container=shrey871/wisecow-app:latest
+          # kubectl rollout status deployment/wisecow-deployment
         env:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
