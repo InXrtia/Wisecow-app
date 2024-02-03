@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wisecow-deployment
+  labels:
+    app: wisecow
   namespace: your-namespace
 spec:
   replicas: 3
@@ -14,16 +16,8 @@ spec:
         app: wisecow
     spec:
       containers:
-      - name: wisecow-container
-        image: shrey871/wisecow-app:latest
-        ports:
-        - containerPort: 4499
-        volumeMounts:
-          - name: tls-certs
-            mountPath: /etc/tls
-            readOnly: true
-      volumes:
-        - name: tls-certs
-          secret:
-            secretName: TLS-secret
-        
+        - name: wisecow-container
+          image: shrey871/wisecow-app:latest
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
