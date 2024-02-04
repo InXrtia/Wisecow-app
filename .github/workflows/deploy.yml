@@ -27,6 +27,7 @@ jobs:
         run: |
           pwd 
           echo "$KUBECONFIG_FILE" > kubeconfig.yml
+          cat kubeconfig.yaml  # Print the kubeconfig file content (added step)
           kubectl config use-context $KUBE_CONTEXT --kubeconfig=kubeconfig.yml
           kubectl apply --kubeconfig=kubeconfig.yml --namespace=$KUBE_NAMESPACE -f wisecow_deploy.yml
           ls /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
