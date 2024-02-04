@@ -27,8 +27,8 @@ jobs:
         run: |
           pwd 
           echo "$KUBECONFIG_FILE" > kubeconfig.yml
-          # kubectl config use-context $KUBE_CONTEXT --kubeconfig=kubeconfig.yml
-          # kubectl apply --kubeconfig=kubeconfig.yml --namespace=$KUBE_NAMESPACE -f wisecow_deploy.yml
+          kubectl config use-context $KUBE_CONTEXT --kubeconfig=kubeconfig.yml
+          kubectl apply --kubeconfig=kubeconfig.yml --namespace=$KUBE_NAMESPACE -f wisecow_deploy.yml
           ls /home/runner/work/Wisecow-app/Wisecow-app/wisecow-app/kubernetes-wisecow
           # kubectl set image deployment/wisecow-deployment wisecow-container=shrey871/wisecow-app:latest
           # kubectl rollout status deployment/wisecow-deployment
