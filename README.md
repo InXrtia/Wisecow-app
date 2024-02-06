@@ -12,4 +12,4 @@ Installations:
 ### To run kubernetes on EC2 Instance make sure to select instance type as t2.medium or above.
 ### Give kubernetes api-server permission to 'port 8080' to host Wisecow-app on the local machine.
 ### To clone the Wisecow-app repository use 'Token.txt' for password.
-
+### For the the TLS encryption enter 'your-domain-name.com' to check TLS communication.
