@@ -21,5 +21,5 @@ main() {
 # Call the main function
 main
 
-# chmod +x applicationcheckup.sh to make script executable.
-# run the script to check the status of application.
+# 'chmod +x applicationcheckup.sh. to make script executable.
+# run the script to check the status of application, as './applicationcheckup.sh'
