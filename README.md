@@ -13,3 +13,5 @@ Installations:
 ### Give kubernetes api-server permission to 'port 8080' to host Wisecow-app on the local machine.
 ### To clone the Wisecow-app repository use 'Token.txt' for password.
 ### For the the TLS encryption enter 'your-domain-name.com' to check TLS communication.
+### Wisecow-app can be accessed through targetPort: 4499 and nodePort: 30007. eg:- 'my-ip:4499.com'
+
