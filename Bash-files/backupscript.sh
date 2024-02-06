@@ -5,7 +5,7 @@ source_dir="/path/to/source/directory"
 
 # Destination directory on the remote server
 remote_destination="user@remote_server:/path/to/remote/destination"
-#I have used AWS S3 as remote path to store 
+#I have used AWS S3 as remote path to store.
 
 # Log file to store backup report
 log_file="/path/to/backup.log"
@@ -19,3 +19,6 @@ if [ $? -eq 0 ]; then
 else
     echo "Backup failed. See $log_file for details."
 fi
+# Replace the /path/to/source/directory, user@remote_server:/path/to/remote/destination, and /path/to/backup.log with your actual source directory, remote destination, and desired log file path respectively.
+# set executable permissions on the script using 'chmod +x backupscript.sh' and then execute it with './backupscript.sh'.
+# Make sure ti install ssh and rsync.
