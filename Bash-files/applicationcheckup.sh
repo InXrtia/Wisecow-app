@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the URL of the application to check
-app_url="http://example.com"
+app_url="http://your-domain-name.com"
 
 # Function to check the status of the application
 check_application_status() {
@@ -20,3 +20,6 @@ main() {
 
 # Call the main function
 main
+
+# chmod +x applicationcheckup.sh to make script executable.
+# run the script to check the status of application.
