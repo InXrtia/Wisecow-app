@@ -1,1 +1,1 @@
-wisecow-app git login Token :- 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
+wisecow-app git login Token :- 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
